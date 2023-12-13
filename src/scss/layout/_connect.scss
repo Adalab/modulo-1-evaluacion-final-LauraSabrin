@@ -1,0 +1,45 @@
+.section {
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    font-family: $font-text;
+    font-size: $size-text;
+    gap: 10px;
+
+    &__h3 {
+        @include style-text;
+        color: $feel-button;
+        font-size: 14px;
+        width: 187px;
+        height: 30px;
+        line-height: 2.14;
+        text-align: left;
+        margin-left: 18px;
+    
+    }
+
+}
+
+.article {
+
+    &__h4 {
+        @include style-title;
+        font-size: 24px;
+        width: 290px;
+        height: 30px;
+        line-height: 1.25;
+        text-align: left;
+        margin-left: 21px;
+       
+    }
+    &__text {
+        @include style-text;
+        width: 287px;
+        height: 171px;
+        color: #4a4a4a;
+           
+    }
+
+}
