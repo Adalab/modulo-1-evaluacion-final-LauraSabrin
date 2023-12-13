@@ -1,3 +1,29 @@
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-image:url(/public/images/cover.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    // background-clip: content-box;
+    
+    background-color: aquamarine;
+}
+
 .button-menu {
-    background-color: #f26002;
+    background-color: $feel-button;
+    border: $feel-button;
+    width: 37px;
+    height: 34px;
+}
+
+.button-image {
+    width: 13.5px;
+    height: 11.1px;
+}
+.discount {
+    color: $discount-button;
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-weight: $bold;
+    line-height: 1.67;
 }
