@@ -1,13 +1,17 @@
 .new-year {
-    background-color: lightgray;
-
-
+    background-color: #f2f2f2;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,120px);
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 40px;
 
 }
 .h5 {
-    width: 290px;
-    height: 60px;
-    margin: 0 0 41px;
+    width: 200px;
+    height: 60px; 
     font-family: $font-title;
     font-size:20px;
     font-weight: $bold;
@@ -16,7 +20,52 @@
     letter-spacing: normal;
     text-align: center;
     color: $colortext;
+    
 }
 .reasons {
-    
+   display: grid;
+   justify-items: center;
+   align-items: center;
+   width: 184px;
+   font-family: $font-text;
+   font-size: $size-text;
+   font-weight: normal;
+   font-stretch: normal;
+   font-style: normal;
+   list-style: 1.67;
+   letter-spacing: normal;
+   text-align: center;
+   color: $colortext;
+
+    &__title {
+        width: 150px;
+        height: 30px;
+        font-family: $font-title;
+        font-size: $size-text;
+        font-weight: $bold;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: normal;
+        text-align: center;
+        color: $colortext; 
+    }
+
+  
+}
+.start-button {
+    background-color: $feel-button;
+    height: 45px;
+    width: 184px;
+    color: white;
+    font-family: $font-button;
+    font-size: 20px;
+    border: $feel-button;
+    border-radius: 22.5px;
+    position: relative;
+    bottom: 20px;
+
+}
+.link {
+    text-decoration: none;
+    color: white;
 }
