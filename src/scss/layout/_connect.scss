@@ -3,10 +3,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
     font-family: $font-text;
     font-size: $size-text;
-    gap: 10px;
+    gap: 0px;
 
     &__h3 {
         @include style-text;
@@ -39,7 +38,19 @@
         width: 287px;
         height: 171px;
         color: #4a4a4a;
+        padding-top: 15px;
            
     }
 
+    &__buy {
+        border: $feel-button;
+        background-color: white;
+        color: $feel-button;
+        font-weight: bold;
+       width: 40%;
+       height: 45px;
+       border: 2px solid $feel-button;
+       border-radius: 40%;
+
+}
 }
