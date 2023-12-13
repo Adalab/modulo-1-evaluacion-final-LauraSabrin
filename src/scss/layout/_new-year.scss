@@ -1,10 +1,21 @@
 .new-year {
-    background-color: f2f2f2;
+    background-color: lightgray;
+
 
 
 }
 .h5 {
-    
+    width: 290px;
+    height: 60px;
+    margin: 0 0 41px;
+    font-family: $font-title;
+    font-size:20px;
+    font-weight: $bold;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: $colortext;
 }
 .reasons {
     
