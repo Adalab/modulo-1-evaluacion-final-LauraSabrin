@@ -1,12 +1,14 @@
 .header {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-image:url(/public/images/cover.jpeg);
+    background-image: url(/public/images/cover.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     // background-clip: content-box;
-    
     background-color: aquamarine;
+
 }
 
 .button-menu {
@@ -20,10 +22,32 @@
     width: 13.5px;
     height: 11.1px;
 }
+
+
+
 .discount {
     color: $discount-button;
     font-weight: $bold;
     text-transform: uppercase;
     font-weight: $bold;
     line-height: 1.67;
+}
+
+// .here {}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35.7px;
+    width: 37.9px;
+    border-radius: 80%;
+    border-width: 0;
+    align-self: center;
+
+    // &down-arrow {
+    //     // width: 16.8px;
+    //     // height: 9.3px;
+
+    // }
 }
