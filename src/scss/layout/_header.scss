@@ -80,9 +80,8 @@
     display: flex;
     align-self: center;
     justify-content: center;
-    align-items: center;
-    padding-top: 10px;
- 
+    align-items: flex-end;
+    
 }
 
 .button-arrow {
@@ -97,7 +96,8 @@
 }
 .button-arrow-img {
      background-color: white;
-     height: 9.3px;
      width: 16.8px;
+     height: 9.3px;
+     
       
 }
