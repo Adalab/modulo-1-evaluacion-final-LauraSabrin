@@ -1,63 +1,103 @@
 .header {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    // align-items: center;
     width: 100vw;
     height: 100vh;
     background-image: url("../../public/images/cover.jpeg");
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    background-color:lightcoral;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-.nav-menu {
-    // background-color: aquamarine;
-    // height: 3%;
-   position: sticky;
-   bottom: 100%;
-//    right: 500px;
-    
-   
-}
+  
 .button-menu {
-    background-color: $feel-button;
-    border: $feel-button;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 37px;
     height: 34px;
-    
+    background-color: $feel-button;
+    border: $feel-button;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    // z-index: 2;
+    /*NECESITO QUE SE QUEDE VISIBLE EL BOTÓN*/
 }
 
-.button-image {
+.button-img {
     width: 13.5px;
     height: 11.1px;
+
 }
 
-.discount{ 
-    background-color: lightgreen;
-    height: 20vh;
-  
+.discount {
+    // background-color: lightcoral;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 280px;
+    margin-left: 10px;
+     
     
 }
 
-.discount-title {
+.discount-h1 {
     color: $discount-button;
+    font-family: $font-title;
     font-weight: $bold;
     font-size: 30px;
+    line-height: 50px;
     text-transform: uppercase;
     font-weight: $bold;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 1.67;
-}
-
-
-.button {
-    height: 35.7px;
-    width: 37.9px;
-   border-radius: 80%;
-    border-width: 0;
-    margin-bottom: 37.8px;
+    text-align: center;
+    text-shadow: 0 1px 3px $colortext;
+    width: 315px;
    
 }
 
-.here-title {
-    font: $size-footer;
+.discount-h2 {
     color: white;
+    font-family: $font-text;
+    font-size: $size-footer;
+    font-weight: $regular;
+    line-height: 19px;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    width: 243.3px;
+    height: 16px;
+    // margin-bottom: 10px;
+
+}
+.container-arrow {
+    width: 200px;
+    height: 80px; 
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+ 
+}
+
+.button-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35.7px;
+    width: 37.9px;
+    background-color: white;
+    border-radius: 80%;
+   
+}
+.button-arrow-img {
+     background-color: white;
+     height: 9.3px;
+     width: 16.8px;
+      
 }
