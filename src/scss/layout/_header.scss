@@ -1,21 +1,29 @@
 .header {
     display: flex;
-    flex-direction: column;
+    align-items: flex-end;
     width: 100vw;
     height: 100vh;
-    background-image: url(/public/images/cover.jpeg);
-    background-size: contain;
+    background-image: url("../../public/images/cover.jpeg");
     background-repeat: no-repeat;
-    // background-clip: content-box;
-    background-color: aquamarine;
-
+    background-size: cover;
+    background-position: center;
+    background-color:lightcoral;
 }
-
+.nav-menu {
+    // background-color: aquamarine;
+    // height: 3%;
+   position: sticky;
+   bottom: 100%;
+//    right: 500px;
+    
+   
+}
 .button-menu {
     background-color: $feel-button;
     border: $feel-button;
     width: 37px;
     height: 34px;
+    
 }
 
 .button-image {
@@ -23,31 +31,33 @@
     height: 11.1px;
 }
 
+.discount{ 
+    background-color: lightgreen;
+    height: 20vh;
+  
+    
+}
 
-
-.discount {
+.discount-title {
     color: $discount-button;
     font-weight: $bold;
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: $bold;
     line-height: 1.67;
 }
 
-// .here {}
 
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 35.7px;
     width: 37.9px;
-    border-radius: 80%;
+   border-radius: 80%;
     border-width: 0;
-    align-self: center;
+    margin-bottom: 37.8px;
+   
+}
 
-    // &down-arrow {
-    //     // width: 16.8px;
-    //     // height: 9.3px;
-
-    // }
+.here-title {
+    font: $size-footer;
+    color: white;
 }
