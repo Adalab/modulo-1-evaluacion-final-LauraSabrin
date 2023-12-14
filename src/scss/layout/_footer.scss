@@ -10,7 +10,15 @@
     gap: 20px;
     padding-bottom:40px;
 
-    &__list--ul {
+    &__list--1 {
+        height: 30%;
+        text-transform: uppercase;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__list--2 {
         height: 30%;
         text-transform: uppercase;
         list-style: none;
@@ -46,5 +54,17 @@
     display: flex;
     justify-content: center;
     align-self: center;
+
+}
+
+@media (min-width 768px){
+
+    .footer {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
 
 }

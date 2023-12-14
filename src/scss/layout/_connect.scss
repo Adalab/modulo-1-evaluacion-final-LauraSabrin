@@ -60,3 +60,16 @@
     margin-left: 10px;
 
 }
+
+@media (min-width: 768px) {
+   
+.article {
+ 
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    
+
+
+}
+}

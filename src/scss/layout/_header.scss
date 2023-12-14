@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
-  
+
 .button-menu {
     @include flex-center;
     width: 37px;
@@ -19,7 +19,7 @@
     position: fixed;
     top: 0px;
     left: 0px;
-   
+
 }
 
 .button-img {
@@ -33,7 +33,7 @@
     flex-direction: column;
     margin-top: 280px;
     margin-left: 10px;
-      
+
 }
 
 .discount-h1 {
@@ -46,6 +46,7 @@
     text-align: center;
     text-shadow: 0 1px 3px $colortext;
     width: 315px;
+
 }
 
 .discount-h2 {
@@ -56,18 +57,19 @@
     line-height: 19px;
     width: 243.3px;
     height: 16px;
-    
+
 }
+
 .container-arrow {
     width: 200px;
-    height: 80px; 
+    height: 80px;
     display: flex;
     align-self: center;
     justify-content: center;
     align-items: flex-end;
     position: absolute;
-    top:430px;
-    
+    top: 430px;
+
 }
 
 .button-arrow {
@@ -77,12 +79,39 @@
     background-color: white;
     border-radius: 80%;
     margin-bottom: px;
-   
+
 }
+
 .button-arrow-img {
-     background-color: white;
-     width: 16.8px;
-     height: 9.3px;
-     
-      
+    background-color: white;
+    width: 16.8px;
+    height: 9.3px;
+
+}
+
+@media (min-width: 768px) {
+
+    .discount {
+        display: flex;
+        align-self: center;
+
+        &__h1 {
+            @include style-title;
+            font-size: 75px;
+            line-height: 100px;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 0 2px 3px black;
+
+        }
+
+        &__h2 {
+            @include style-text;
+            font-size: 24px;
+            line-height: 28px;
+            color: white;
+            width: 45%;
+
+        }
+    }
 }
