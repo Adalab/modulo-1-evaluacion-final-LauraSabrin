@@ -4,35 +4,35 @@
     flex-direction: column;
     font-family: $font-text;
     font-size: $size-text;
-    
+    gap: 3px;
 
     &__h3 {
         @include style-text;
         color: $feel-button;
         font-size: 14px;
-        width: 187px;
-        height: 30px;
         line-height: 2.14;
         text-align: left;
         margin-top: 34px;
-       padding-left: 18px;
-    
+        padding-left: 18px;
+
     }
 
 }
 
 .article {
+    gap: 25px;
 
     &__h4 {
         @include style-title;
         font-size: 24px;
-        width: 100vw;
-        height: 30px;
+        // width: 100vw;
+        // height: 10px;
         line-height: 1.25;
         text-align: left;
         padding-left: 18px;
-           
+
     }
+
     &__text {
         @include style-text;
         width: 287px;
@@ -40,19 +40,19 @@
         color: #4a4a4a;
         padding-top: 15px;
         padding-left: 18px;
-     margin: 11px 0 51px 3px;
-           
+
     }
 
-    &__buy {
-        border: $feel-button;
-        background-color: white;
-        color: $feel-button;
-        font-weight: bold;
-       width: 40%;
-       height: 45px;
-       border: 2px solid $feel-button;
-       border-radius: 40%;
-
 }
+
+.button-buy {
+    border: $feel-button;
+    background-color: white;
+    color: $feel-button;
+    font-weight: bold;
+    width: 40%;
+    height: 45px;
+    border: 2px solid $feel-button;
+    border-radius:22.5px;
+
 }
