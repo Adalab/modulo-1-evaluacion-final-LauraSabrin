@@ -1,7 +1,54 @@
-
-.menu list {
-
+.footer {
+    height: 80vh;
+    @include style-text;
+    color: white;
     font-size: $size-footer;
     background-color: #4a4a4a;
-    color:white
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+
+   
+    &__list--ul {
+        height: 30%;
+        text-transform: uppercase;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
+.figure {
+    display: flex;
+    color: $feel-button;
+    background-color: white;
+    border-radius: 80%;
+    height: 45px;
+    width: 45px;
+    align-self: center;
+   justify-content: center;
+   position: fixed;
+   top:90px;
+   
+   &__arrow--top {
+    width: 20.6px;
+    height: 24px;
+    align-self: center;
+   }
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+.copy {
+
+    height: 10vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }

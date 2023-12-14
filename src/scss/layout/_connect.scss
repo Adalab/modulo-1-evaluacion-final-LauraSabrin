@@ -1,5 +1,5 @@
 .section {
-    height: 376px;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     font-family: $font-text;
@@ -21,6 +21,8 @@
 
 .article {
     gap: 25px;
+    display: flex;
+    flex-direction: column;
 
     &__h4 {
         @include style-title;
@@ -34,24 +36,29 @@
 
     &__text {
         @include style-text;
+        text-align: left;
         width: 287px;
         height: 200px;
         color: #4a4a4a;
-        padding-top: 15px;
-        padding-left: 18px;
+        align-self: center;
 
     }
 
 }
 
 .button-buy {
+    @include style-text;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2.25;
     border: $feel-button;
     background-color: white;
     color: $feel-button;
-    font-weight: bold;
-    width: 40%;
-    height: 45px;
     border: 2px solid $feel-button;
-    border-radius:22.5px;
+    border-radius: 22.5px;
+    font-weight: 500;
+    width: 137.1px;
+    height: 45px;
+    margin-left: 10px;
 
 }

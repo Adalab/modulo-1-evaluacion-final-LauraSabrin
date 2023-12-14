@@ -4,7 +4,8 @@
     font-weight: normal;
     letter-spacing: normal;
     font-style: normal;
-    font-family: $font-text;
+    text-align:center;
+    font-family: $font-text;   
 
 }
 
@@ -15,4 +16,9 @@
     letter-spacing: normal;
     font-style: normal;
     font-family: $font-title;
+}
+@mixin button-white (){
+    background-color: white;
+    color: $feel-button;
+
 }
