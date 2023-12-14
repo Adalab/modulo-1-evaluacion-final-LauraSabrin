@@ -2,10 +2,9 @@
     height: 376px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     font-family: $font-text;
     font-size: $size-text;
-    gap: 0px;
+    
 
     &__h3 {
         @include style-text;
@@ -15,7 +14,8 @@
         height: 30px;
         line-height: 2.14;
         text-align: left;
-        margin-left: 18px;
+        margin-top: 34px;
+       padding-left: 18px;
     
     }
 
@@ -26,19 +26,21 @@
     &__h4 {
         @include style-title;
         font-size: 24px;
-        width: 290px;
+        width: 100vw;
         height: 30px;
         line-height: 1.25;
         text-align: left;
-        margin-left: 21px;
-       
+        padding-left: 18px;
+           
     }
     &__text {
         @include style-text;
         width: 287px;
-        height: 171px;
+        height: 200px;
         color: #4a4a4a;
         padding-top: 15px;
+        padding-left: 18px;
+     margin: 11px 0 51px 3px;
            
     }
 
