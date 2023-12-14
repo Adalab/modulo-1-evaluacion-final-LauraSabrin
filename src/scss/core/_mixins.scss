@@ -10,7 +10,7 @@
 }
 
 @mixin style-title(){
-    
+    text-align: center;
     font-stretch: normal;
     font-weight: $bold;
     letter-spacing: normal;
@@ -21,4 +21,10 @@
     background-color: white;
     color: $feel-button;
 
+}
+
+@mixin flex-center (){
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

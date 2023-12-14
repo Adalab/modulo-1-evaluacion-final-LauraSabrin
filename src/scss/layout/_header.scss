@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    // align-items: center;
     width: 100vw;
     height: 100vh;
     background-image: url("../../public/images/cover.jpeg");
@@ -12,9 +11,7 @@
 }
   
 .button-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     width: 37px;
     height: 34px;
     background-color: $feel-button;
@@ -22,6 +19,7 @@
     position: fixed;
     top: 0px;
     left: 0px;
+   
 }
 
 .button-img {
@@ -31,46 +29,34 @@
 }
 
 .discount {
-    // background-color: lightcoral;
-    display:flex;
+    @include flex-center;
     flex-direction: column;
-    align-items: center;
     margin-top: 280px;
     margin-left: 10px;
-     
-    
+      
 }
 
 .discount-h1 {
+    @include style-title;
     color: $discount-button;
-    font-family: $font-title;
-    font-weight: $bold;
     font-size: 30px;
     line-height: 50px;
     text-transform: uppercase;
-    font-weight: $bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.67;
     text-align: center;
     text-shadow: 0 1px 3px $colortext;
     width: 315px;
-   
 }
 
 .discount-h2 {
     color: white;
-    font-family: $font-text;
+    @include style-text;
     font-size: $size-footer;
     font-weight: $regular;
     line-height: 19px;
-    font-stretch: normal;
-    font-style: normal;
-    text-align: center;
     width: 243.3px;
     height: 16px;
-    // margin-bottom: 10px;
-
+    
 }
 .container-arrow {
     width: 200px;
@@ -79,17 +65,18 @@
     align-self: center;
     justify-content: center;
     align-items: flex-end;
+    position: absolute;
+    top:430px;
     
 }
 
 .button-arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     height: 35.7px;
     width: 37.9px;
     background-color: white;
     border-radius: 80%;
+    margin-bottom: px;
    
 }
 .button-arrow-img {

@@ -6,19 +6,15 @@
     grid-template-rows: repeat(5,120px);
     align-items: center;
     justify-items: center;
-    margin-bottom: 40px;
+    
 
 }
 .h5 {
+    @include style-title;
     width: 200px;
     height: 60px; 
-    font-family: $font-title;
     font-size:20px;
-    font-weight: $bold;
-    font-stretch: normal;
     line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
     color: $colortext;
     
 }
@@ -27,26 +23,17 @@
    justify-items: center;
    align-items: center;
    width: 184px;
-   font-family: $font-text;
+   @include style-text;
    font-size: $size-text;
-   font-weight: normal;
-   font-stretch: normal;
-   font-style: normal;
    list-style: 1.67;
-   letter-spacing: normal;
-   text-align: center;
    color: $colortext;
 
     &__title {
         width: 150px;
         height: 30px;
-        font-family: $font-title;
+        @include style-title;
         font-size: $size-text;
-        font-weight: $bold;
-        font-stretch: normal;
         line-height: 1.67;
-        letter-spacing: normal;
-        text-align: center;
         color: $colortext; 
     }
 
@@ -62,7 +49,7 @@
     border: $feel-button;
     border-radius: 22.5px;
     position: relative;
-    bottom: 20px;
+    bottom: 50px;
 
 }
 .link {
