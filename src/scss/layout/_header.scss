@@ -19,11 +19,9 @@
     height: 34px;
     background-color: $feel-button;
     border: $feel-button;
-    position: sticky;
+    position: fixed;
     top: 0px;
     left: 0px;
-    // z-index: 2;
-    /*NECESITO QUE SE QUEDE VISIBLE EL BOTÓN*/
 }
 
 .button-img {
