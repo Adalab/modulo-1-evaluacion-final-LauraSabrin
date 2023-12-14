@@ -2,9 +2,10 @@
     height: 376px;
     display: flex;
     flex-direction: column;
-    font-family: $font-text;
+    font font-family: $font text;
     font-size: $size-text;
     gap: 3px;
+
 
     &__h3 {
         @include style-text;
